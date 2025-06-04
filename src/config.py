@@ -78,5 +78,5 @@ TEMPERATURE_SENSORS = [
 ]
 
 # Fan modes configuration
-SILENT_MODE_SPEED = 13 # In a range of 0-255 (0-100% speed)
-MANUAL_DEFAULT_SPEED = 18 # In a range of 0-255 (0-100% speed)
+SILENT_MODE_SPEED = 20 # In a range of 0-255 (0-100% speed)
+MANUAL_DEFAULT_SPEED = 51 # In a range of 0-255 (0-100% speed)

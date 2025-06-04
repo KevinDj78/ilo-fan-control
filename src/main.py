@@ -232,7 +232,7 @@ async def thermal_watchdog():
 # Start the FastAPI app with lifespan context manager
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    await change_mode("auto")  # Ensure we start in auto mode
+    await change_mode("manual")  # Ensure we start in manual mode
     poll_task = asyncio.create_task(poll_ilo_data())
     watchdog_task = asyncio.create_task(thermal_watchdog())
     yield  # App is running
